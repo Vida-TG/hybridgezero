@@ -1,8 +1,9 @@
 import React from 'react'
+import { Connect } from './components/Connect'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <Connect />
   )
 }
 
