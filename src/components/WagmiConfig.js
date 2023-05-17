@@ -1,6 +1,6 @@
 import { infuraProvider } from 'wagmi/providers/infura'
 import { mainnet, avalanche } from 'wagmi/chains'
-import { createConfig, configureChains, mainnet } from 'wagmi'
+import { createConfig, configureChains } from 'wagmi'
 import { publicProvider } from 'wagmi/providers/public'
 
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'

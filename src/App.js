@@ -1,6 +1,6 @@
 import Home from "./Home";
 import { WagmiConfig } from "wagmi";
-import config from './components/WagmiConfig'
+import { config } from './components/WagmiConfig'
 import "./App.css";
 
 function App() {
