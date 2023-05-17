@@ -1,5 +1,5 @@
 <div align="center">
-    <a href="#" target="_blank"><img src="" /></a>
+    <a href="#" target="_blank"><img src="./public/hybridge.png" /></a>
 </div>
 
 <h1 align="center">The world's first multichain aggregator</h1>
