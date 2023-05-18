@@ -11,21 +11,95 @@
         font-size: large !important;
         padding: 5px 20px !important;
     }
+    .head {
+        font-size: x-large !important;
+    }
+    .token {
+        font-size: large !important;
+    }
+
 }
 
 .full-card {
     width: 600px;
     height: 600px;
-    background-color: #fff;
+    background-color: #eee;
     box-shadow: 0px 0px 7px #222;
     border-radius: 35px;
     margin: 40px auto 30px auto;
 }
 
 .card-body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-size: x-large;
     line-height: 35px;
     text-align: center;
     padding: 5px 45px;
+}
+
+.head {
+    display: flex;
+    height: 75px;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 15px;
+    opacity: .6;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.swap {
+    display: flex;
+    justify-content: space-between;
+    height: 180px;
+}
+.swap-input {
+    height: 75%;
+    width: 70%;
+    border: 0px;
+    padding: 0px 25px;
+    font-size: 50px;
+    opacity: .6;
+    background: #eee;
+    box-shadow: 0px 0px 15px #ccc;
+    font-family:'Times New Roman', Times, serif;
+}
+.swap-input:active {
+    border: 0px;
+}
+.swap-input:focus {
+    border: none !important;
+}
+.token {
+    height: 75%;
+    width: 30%;
+    border: 0px ;
+    display: flex;
+    font-size: xx-large;
+    opacity: .6;
+    font-family:'Times New Roman', Times, serif;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+    box-shadow: 0px 0px 10px #ccc;
+}
+.swap-input:active {
+    border: 0px;
+}
+
+.swap-btn {
+    width: 100%;
+    height: 150px;
+}
+.swap-btn > button {
+    width: 100%;
+    height: 80px;
+    border-radius: 20px;
+    border: 0px;
+    box-shadow: 0px 0px 5px #222;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: .5;
 }

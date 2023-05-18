@@ -5,6 +5,7 @@ import {
     useEnsAvatar,
     useEnsName,
   } from 'wagmi'
+import './connect.css'
    
 export function Connect() {
     const { address, isConnected } = useAccount()
@@ -23,22 +24,27 @@ export function Connect() {
     }
    
     return (
-      <div>
-        {connectors.map((connector) => (
-          <button
-            disabled={!connector.ready}
-            key={connector.id}
-            onClick={() => connect({ connector })}
-          >
-            {connector.name}
-            {!connector.ready && ' (unsupported)'}
-            {isLoading &&
-              connector.id === pendingConnector?.id &&
-              ' (connecting)'}
-          </button>
-        ))}
-   
-        {error && <div>{error.message}</div>}
-      </div>
+      <>
+
+        <button className='connect-btn'>Connect Wallet</button>
+
+        <div>
+          {connectors.map((connector) => (
+            <button
+              disabled={!connector.ready}
+              key={connector.id}
+              onClick={() => connect({ connector })}
+            >
+              {connector.name}
+              {!connector.ready && ' (unsupported)'}
+              {isLoading &&
+                connector.id === pendingConnector?.id &&
+                ' (connecting)'}
+            </button>
+          ))}
+    
+          {error && <div>{error.message}</div>}
+        </div>
+      </>
     )
   }

@@ -1,15 +1,14 @@
 import React from 'react'
-import { Connect } from '../components/Connect'
-import { NetworkSwitcher } from '../components/NetworkSwitcher'
+import Header from '../components/Header'
 import Main from '../components/Main'
+import './home.css'
 
 const Home = () => {
   return (
-    <>
-      <Connect />
-      <NetworkSwitcher />
+    <div className='home'>
+      <Header />
       <Main />
-    </>
+    </div>
   )
 }
 
