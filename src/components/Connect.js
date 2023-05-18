@@ -36,12 +36,13 @@ export function Connect() {
     return (
       <>
 
-        <button onClick={setTheConnectorClicked} className='connect-btn'>Connect Wallet</button>
+        <button onClick={setTheConnectorClicked} className='connect-btn'>CONNECT WALLET</button>
 
         { !connectorClicked ? "" :
           <div className="connect-switch">
             {connectors.map((connector) => (
               <button
+                className='connect-switch-btn'
                 disabled={!connector.ready}
                 key={connector.id}
                 onClick={() => connect({ connector })}

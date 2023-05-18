@@ -9,11 +9,20 @@
 }
 
 .connect-switch {
-    height: 500px;
+    height: 350px;
+    width: 70vw;
+    max-width: 600px;
     position: absolute;
     top: 20vh;
-    right: 40vw;
+    right: 15vw;
     z-index: 1;
     padding: 10px;
-    box-shadow: 0px 0px 5px #444;
+    background: #eee;
+    box-shadow: 0px 0px 8px #777;
+}
+
+.connect-switch-btn {
+    display: block;
+    width: 300px;
+    height: 100px;
 }

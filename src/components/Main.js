@@ -9,11 +9,11 @@ const Main = () => {
                 <div className="head">
                     SWAP
                 </div>
-                <div className="swap swap1">
+                <div className="swap swap-1">
                     <input className="swap-input" />
                     <div className="token token1">PEPE</div>
                 </div>
-                <div className="swap swap2">
+                <div className="swap swap-2">
                     <input className="swap-input" />
                     <div className="token token2">PEPE</div>
                 </div>
