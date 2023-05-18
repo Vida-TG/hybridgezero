@@ -7,7 +7,7 @@ import {
   } from 'wagmi'
    
 export function Connect() {
-    const { address, connector, isConnected } = useAccount()
+    const { address, isConnected } = useAccount()
     const { data: ensAvatar } = useEnsAvatar({ address })
     const { data: ensName } = useEnsName({ address })
     const { connect, connectors, error, isLoading, pendingConnector } = useConnect()

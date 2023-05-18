@@ -9,19 +9,19 @@
 </div>
 
 <h3>#DEX #Exchange #BuildOnCircle</h3>
-<p>HybridgeZero gets you the best prices to swap tokens across different chains</p>
+<p>HybridgeX gets you the best prices to swap tokens across different chains</p>
 
 <h3>Technologies being used</h3>
 <p>Wagmi Ether </p>
 
 <h3>App Link</h3>
-<a href="#">HybridgeZero on vercel</a>
+<a href="#">HybridgeX on vercel</a>
 
 <h3>Screenshoot</h3>
 <img width="1128" alt="image" src="#">
 
 <h3>Description</h3>
-<p>HybridgeZero is a multichain exchange that helps you swap tokens on two entirely different ecosystems. For example you can swap Avalanche's $JOE token directly to
+<p>HybridgeX is a multichain exchange that helps you swap tokens on two entirely different ecosystems. For example you can swap Avalanche's $JOE token directly to
 ETH's $PEPE token. It does this by aggregating every DEX on the Avalanche to get  the best price to swap JOE to Circle's USDC after which the USDC is bridged to ETH USDC via Circle's CCTP and another price aggregation is performed to get the best price to swap the bridged USDC on ETH to $PEPE</p>
 
 

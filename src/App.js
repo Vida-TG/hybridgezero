@@ -1,4 +1,4 @@
-import Home from "./Home";
+import Home from "./pages/Home";
 import { WagmiConfig } from "wagmi";
 import { config } from './components/WagmiConfig'
 import "./App.css";

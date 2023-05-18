@@ -1,0 +1,31 @@
+@media screen and (max-width: 750px){
+    .full-card {
+        width: 90% !important;
+        height: 600px !important;
+        box-shadow: 0px 0px 7px #222 !important;
+        border-radius: 30px !important;
+        margin: 30px auto 30px auto !important;
+    }
+
+    .card-body {
+        font-size: large !important;
+        padding: 5px 20px !important;
+    }
+}
+
+.full-card {
+    width: 600px;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 0px 0px 7px #222;
+    border-radius: 35px;
+    margin: 40px auto 30px auto;
+}
+
+.card-body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    line-height: 35px;
+    text-align: center;
+    padding: 5px 45px;
+}

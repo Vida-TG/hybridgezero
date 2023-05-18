@@ -27,7 +27,7 @@ export const config = createConfig({
       new CoinbaseWalletConnector({
         chains,
         options: {
-          appName: 'HybridgeZero',
+          appName: 'HybridgeX',
         },
       }),
       new InjectedConnector({
