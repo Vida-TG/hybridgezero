@@ -1,3 +1,4 @@
+import React from 'react'
 import {
     useAccount,
     useConnect,
@@ -12,7 +13,16 @@ export function Connect() {
     const { data: ensAvatar } = useEnsAvatar({ address })
     const { data: ensName } = useEnsName({ address })
     const { connect, connectors, error, isLoading, pendingConnector } = useConnect()
+    const [ connectorClicked, setConnectorClicked ] = React.useState(false)
     const { disconnect } = useDisconnect()
+
+    function setTheConnectorClicked() {
+      if(connectorClicked){
+        setConnectorClicked(false)
+      } else {
+        setConnectorClicked(true)
+      }
+    }
 
     if (isConnected) {
         return (
@@ -26,25 +36,27 @@ export function Connect() {
     return (
       <>
 
-        <button className='connect-btn'>Connect Wallet</button>
+        <button onClick={setTheConnectorClicked} className='connect-btn'>Connect Wallet</button>
 
-        <div>
-          {connectors.map((connector) => (
-            <button
-              disabled={!connector.ready}
-              key={connector.id}
-              onClick={() => connect({ connector })}
-            >
-              {connector.name}
-              {!connector.ready && ' (unsupported)'}
-              {isLoading &&
-                connector.id === pendingConnector?.id &&
-                ' (connecting)'}
-            </button>
-          ))}
-    
-          {error && <div>{error.message}</div>}
-        </div>
+        { !connectorClicked ? "" :
+          <div className="connect-switch">
+            {connectors.map((connector) => (
+              <button
+                disabled={!connector.ready}
+                key={connector.id}
+                onClick={() => connect({ connector })}
+              >
+                {connector.name}
+                {!connector.ready && ' (unsupported)'}
+                {isLoading &&
+                  connector.id === pendingConnector?.id &&
+                  ' (connecting)'}
+              </button>
+            ))}
+      
+            {error && <div>{error.message}</div>}
+          </div>
+        }
       </>
     )
   }

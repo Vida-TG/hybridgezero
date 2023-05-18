@@ -1,8 +1,19 @@
 .connect-btn {
     padding: 15px 25px;
+    height: 60px;
     background: #eee;
     border: 0px;
     border-radius: 2px;
     font-size: x-large;
     box-shadow: 0px 0px 10px #444;
+}
+
+.connect-switch {
+    height: 500px;
+    position: absolute;
+    top: 20vh;
+    right: 40vw;
+    z-index: 1;
+    padding: 10px;
+    box-shadow: 0px 0px 5px #444;
 }
