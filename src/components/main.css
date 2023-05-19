@@ -51,6 +51,17 @@ input:active {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.crossover {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.crossover > img {
+    width: 15%;
+    opacity: .8;
+}
+
 .swap {
     display: flex;
     justify-content: space-between;
@@ -60,7 +71,7 @@ input:active {
     box-shadow: 0px 0px 2px #222;
 }
 .swap-2 {
-    margin: 50px 0px 30px 0px;   
+    margin: 0px 0px 25px 0px;   
 }
 .swap-input {
     width: 70%;
@@ -71,11 +82,8 @@ input:active {
     background: #eee;
     font-family:'Times New Roman', Times, serif;
 }
-.swap-input:active {
-    border: 0px;
-}
 .swap-input:focus {
-    border: none !important;
+    outline: none !important;
 }
 .token {
     width: 30%;

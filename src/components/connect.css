@@ -1,17 +1,23 @@
+.entire-connect {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
 .connect-btn {
-    padding: 15px 25px;
-    height: 60px;
+    padding: 5px 45px;
+    height: 55px;
     background: #eee;
     border: 0px;
     border-radius: 2px;
     font-size: x-large;
-    box-shadow: 0px 0px 10px #444;
+    box-shadow: 0px 0px 7px #444;
+    opacity: .7;
+    font-family:'Times New Roman', Times, serif;
 }
 
 .connect-switch {
     height: 350px;
     width: 70vw;
-    max-width: 600px;
     position: absolute;
     top: 20vh;
     right: 15vw;
@@ -25,4 +31,9 @@
     display: block;
     width: 300px;
     height: 100px;
+}
+
+.title-img > img {
+    height: 60px;
+    opacity: .7;
 }
