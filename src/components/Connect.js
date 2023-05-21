@@ -29,10 +29,7 @@ export function Connect() {
         return (
             <div className='entire-connect'>
                 <div className='title-img'><img src={ hybridge } /></div>
-                <div>{address}</div>
-                <button onClick={disconnect}>Disconnect</button>
-
-
+                <button className='connect-btn' onClick={disconnect}>Disconnect</button>
             </div>
         )
     }
@@ -59,7 +56,6 @@ export function Connect() {
               </button>
             ))}
       
-            {error && <div>{error.message}</div>}
           </div>
         }
       </div>

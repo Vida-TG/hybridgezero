@@ -88,13 +88,22 @@ input:active {
 .token {
     width: 30%;
     border: 0px ;
-    display: flex;
-    font-size: xx-large;
-    opacity: .5;
+    display: block;
+    font-size: x-large;
+    opacity: .7;
     font-family:'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
     background: #eee;
+    padding: 10px 2px;
+}
+
+.token-in-swap {
+    height: 60%;
+}
+.token-in-swap > img {
+    height: 100%;
+}
+.chain-in-swap > img {
+    height: 25px;
 }
 
 .swap-btn {

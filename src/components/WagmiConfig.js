@@ -4,7 +4,6 @@ import { createConfig, configureChains } from 'wagmi'
 import { publicProvider } from 'wagmi/providers/public'
 
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'
-import { InjectedConnector } from 'wagmi/connectors/injected'
 import { MetaMaskConnector } from 'wagmi/connectors/metaMask'
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
@@ -28,13 +27,6 @@ export const config = createConfig({
         chains,
         options: {
           appName: 'HybridgeX',
-        },
-      }),
-      new InjectedConnector({
-        chains,
-        options: {
-          name: 'Injected',
-          shimDisconnect: true,
         },
       }),
     ],
