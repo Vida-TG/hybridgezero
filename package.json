@@ -13,7 +13,18 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "wagmi": "^1.0.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+   "react-app-rewired",
+    "crypto-browserify",
+    "stream-browserify",
+    "browserify-zlib",
+    "assert",
+    "stream-http",
+    "https-browserify",
+    "os-browserify",
+    "url",
+    "buffer",
+    "process"
   },
   "scripts": {
     "start": "react-app-rewired start",
