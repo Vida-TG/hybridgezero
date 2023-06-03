@@ -18,7 +18,7 @@
 <a href="#">HybridgeX on vercel</a>
 
 <h3>Screenshoot</h3>
-![Header](https://raw.githubusercontent.com/Vida-TG/hybridgezero/main/hybridge_sc.png)
+![Header](https://raw.githubusercontent.com/Vida-TG/hybridgezero/main/hybridge-sc.png)
 
 <h3>Description</h3>
 <p>HybridgeX is a multichain exchange that helps you swap tokens on two entirely different ecosystems. For example you can swap Avalanche's $JOE token directly to
